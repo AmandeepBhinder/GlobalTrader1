@@ -3,73 +3,72 @@
     "line": 2,
     "elements": [
       {
-        "line": 3,
-        "name": "User is on the Global Trader page",
+        "start_timestamp": "2020-10-16T22:33:57.724Z",
+        "line": 4,
+        "name": "TC01_User_should_have_account",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
+        "id": "us1008-user-should-buy-dresses;tc01-user-should-have-account",
+        "type": "scenario",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.AgentSellerStepDefinition\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException\r\n\tat utilities.Driver.getDriver(Driver.java:27)\r\n\tat pages.AgentSellerPage.\u003cinit\u003e(AgentSellerPage.java:10)\r\n\tat stepdefinitions.AgentSellerStepDefinition.\u003cinit\u003e(AgentSellerStepDefinition.java:13)\r\n\t... 38 more\r\n",
-              "duration": 4000000,
+              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.GlobalTraderStepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException\r\n\tat utilities.Driver.getDriver(Driver.java:29)\r\n\tat pages.GlobalTraderPage.\u003cinit\u003e(GlobalTraderPage.java:10)\r\n\tat stepdefinitions.GlobalTraderStepDefinitions.\u003cinit\u003e(GlobalTraderStepDefinitions.java:12)\r\n\t... 38 more\r\n",
+              "duration": 9000000,
               "status": "failed"
             },
-            "line": 4,
-            "name": "user is on the Global Trader page",
+            "line": 5,
+            "name": "user is on the globalTrader webpage",
             "match": {
-              "location": "stepdefinitions.AgentSellerStepDefinition.user_is_on_the_Global_Trader_page()"
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.user_is_on_the_webpage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "skipped"
             },
-            "line": 5,
-            "name": "user is on click Seller Join Now",
+            "line": 6,
+            "name": "user clicks on the women clothing and accessories",
             "match": {
-              "location": "stepdefinitions.AgentSellerStepDefinition.user_is_on_click_Seller_Join_Now()"
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.user_clicks_on_the_women_clothing_and_accessories()"
             },
             "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-10-16T18:04:54.232Z",
-        "line": 27,
-        "name": "TC01 The system should allow Agent Seller registration",
-        "description": "",
-        "id": "us101-the-system-should-allow-agent-seller-registration-with-valid-credentials;tc01-the-system-should-allow-agent-seller-registration;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
+          },
           {
             "result": {
               "duration": 1000000,
               "status": "skipped"
             },
-            "line": 8,
-            "name": "user select to Agent Seller page",
+            "line": 7,
+            "name": "user click on tassel dresses",
             "match": {
-              "location": "stepdefinitions.AgentSellerStepDefinition.user_select_to_Agent_Seller_page()"
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_tassel_dresses()"
             },
             "keyword": "When "
           },
           {
             "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user click on dresses",
+            "match": {
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_dresses()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
               "status": "skipped"
             },
             "line": 9,
-            "name": "user enters company name \"CoTrader\"",
+            "name": "user click on buy now button",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"CoTrader\"",
-                  "offset": 25
-                }
-              ],
-              "location": "stepdefinitions.AgentSellerStepDefinition.user_enters_company_name(java.lang.String)"
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_buy_now_button()"
             },
             "keyword": "When "
           },
@@ -79,32 +78,85 @@
               "status": "skipped"
             },
             "line": 10,
-            "name": "user enters company Mobile \"8571112233\"",
+            "name": "user enter username",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"8571112233\"",
-                  "offset": 27
-                }
-              ],
-              "location": "stepdefinitions.AgentSellerStepDefinition.user_enters_company_Mobile(java.lang.String)"
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.user_enter_username()"
             },
-            "keyword": "And "
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user enters password",
+            "match": {
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.user_enters_password()"
+            },
+            "keyword": "When "
           },
           {
             "result": {
               "status": "skipped"
             },
-            "line": 11,
-            "name": "user enter company address \"12 New St.\"",
+            "line": 12,
+            "name": "user click on login button",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"12 New St.\"",
-                  "offset": 27
-                }
-              ],
-              "location": "stepdefinitions.AgentSellerStepDefinition.user_enter_company_address(java.lang.String)"
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "verify the message",
+            "match": {
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.verify_the_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test11"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-16T22:33:57.888Z",
+        "line": 15,
+        "name": "TC02_User_should_be_able_to_select_size_and_colour",
+        "description": "",
+        "id": "us1008-user-should-buy-dresses;tc02-user-should-be-able-to-select-size-and-colour",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.GlobalTraderStepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException\r\n\tat utilities.Driver.getDriver(Driver.java:29)\r\n\tat pages.GlobalTraderPage.\u003cinit\u003e(GlobalTraderPage.java:10)\r\n\tat stepdefinitions.GlobalTraderStepDefinitions.\u003cinit\u003e(GlobalTraderStepDefinitions.java:12)\r\n\t... 38 more\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 16,
+            "name": "user is on the globalTrader webpage",
+            "match": {
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.user_is_on_the_webpage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "user clicks on the women clothing and accessories",
+            "match": {
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.user_clicks_on_the_women_clothing_and_accessories()"
             },
             "keyword": "And "
           },
@@ -113,114 +165,12 @@
               "duration": 1000000,
               "status": "skipped"
             },
-            "line": 12,
-            "name": "user enters the fullname \"John Brown\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"John Brown\"",
-                  "offset": 25
-                }
-              ],
-              "location": "stepdefinitions.AgentSellerStepDefinition.user_enters_the_fullname(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 13,
-            "name": "user enters the email \"abc@gmail.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"abc@gmail.com\"",
-                  "offset": 22
-                }
-              ],
-              "location": "stepdefinitions.AgentSellerStepDefinition.user_enters_the_email(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 14,
-            "name": "user enter Sub Domain \"trader\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"trader\"",
-                  "offset": 22
-                }
-              ],
-              "location": "stepdefinitions.AgentSellerStepDefinition.user_enter_Sub_Domain(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 15,
-            "name": "user enter Mobile Number \"8571112233\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"8571112233\"",
-                  "offset": 25
-                }
-              ],
-              "location": "stepdefinitions.AgentSellerStepDefinition.user_enter_Mobile_Number(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 16,
-            "name": "user select to country",
-            "match": {
-              "location": "stepdefinitions.AgentSellerStepDefinition.user_select_to_country()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 17,
-            "name": "user enter to state \"TX\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"TX\"",
-                  "offset": 20
-                }
-              ],
-              "location": "stepdefinitions.AgentSellerStepDefinition.user_enter_to_state(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
             "line": 18,
-            "name": "user enter to city \"Austin\"",
+            "name": "user click on tassel dresses",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Austin\"",
-                  "offset": 19
-                }
-              ],
-              "location": "stepdefinitions.AgentSellerStepDefinition.user_enter_to_city(java.lang.String)"
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_tassel_dresses()"
             },
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
@@ -228,26 +178,9 @@
               "status": "skipped"
             },
             "line": 19,
-            "name": "user enter to postal code \"01213\"",
+            "name": "user click on dresses",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"01213\"",
-                  "offset": 26
-                }
-              ],
-              "location": "stepdefinitions.AgentSellerStepDefinition.user_enter_to_postal_code(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 20,
-            "name": "Select to categories",
-            "match": {
-              "location": "stepdefinitions.AgentSellerStepDefinition.select_to_categories()"
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_dresses()"
             },
             "keyword": "When "
           },
@@ -256,16 +189,62 @@
               "duration": 1000000,
               "status": "skipped"
             },
+            "line": 20,
+            "name": "user click on size",
+            "match": {
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_size()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
             "line": 21,
-            "name": "Enter to password \"123456\"",
+            "name": "user click on colour",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"123456\"",
-                  "offset": 18
-                }
-              ],
-              "location": "stepdefinitions.AgentSellerStepDefinition.enter_to_password(java.lang.String)"
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_colour()"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test11"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-16T22:33:57.905Z",
+        "line": 23,
+        "name": "TC01_User_should_be_able_to_add_to_cart",
+        "description": "",
+        "id": "us1008-user-should-buy-dresses;tc01-user-should-be-able-to-add-to-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.GlobalTraderStepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException\r\n\tat utilities.Driver.getDriver(Driver.java:29)\r\n\tat pages.GlobalTraderPage.\u003cinit\u003e(GlobalTraderPage.java:10)\r\n\tat stepdefinitions.GlobalTraderStepDefinitions.\u003cinit\u003e(GlobalTraderStepDefinitions.java:12)\r\n\t... 38 more\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 24,
+            "name": "user is on the globalTrader webpage",
+            "match": {
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.user_is_on_the_webpage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "user clicks on the women clothing and accessories",
+            "match": {
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.user_clicks_on_the_women_clothing_and_accessories()"
             },
             "keyword": "And "
           },
@@ -273,40 +252,196 @@
             "result": {
               "status": "skipped"
             },
-            "line": 22,
-            "name": "Click to Registration Button",
+            "line": 26,
+            "name": "user click on tassel dresses",
             "match": {
-              "location": "stepdefinitions.AgentSellerStepDefinition.click_to_Registration_Button()"
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_tassel_dresses()"
             },
-            "keyword": "And "
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "user click on dresses",
+            "match": {
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_dresses()"
+            },
+            "keyword": "When "
           },
           {
             "result": {
               "status": "skipped"
             },
-            "line": 23,
-            "name": "Verify to registration data",
+            "line": 28,
+            "name": "user click on buy now button",
             "match": {
-              "location": "stepdefinitions.AgentSellerStepDefinition.verify_to_registration_data()"
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_buy_now_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "user enter username",
+            "match": {
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.user_enter_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "user enters password",
+            "match": {
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.user_enters_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "user click on login button",
+            "match": {
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "user click on cart button",
+            "match": {
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_cart_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "verify buy now option",
+            "match": {
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.verify_buy_now_option()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@seller"
+            "name": "@test11"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-16T22:33:57.933Z",
+        "line": 36,
+        "name": "TC01_User_should_not_be_able_to_buy_dresses",
+        "description": "",
+        "id": "us1008-user-should-buy-dresses;tc01-user-should-not-be-able-to-buy-dresses",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.GlobalTraderStepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException\r\n\tat utilities.Driver.getDriver(Driver.java:29)\r\n\tat pages.GlobalTraderPage.\u003cinit\u003e(GlobalTraderPage.java:10)\r\n\tat stepdefinitions.GlobalTraderStepDefinitions.\u003cinit\u003e(GlobalTraderStepDefinitions.java:12)\r\n\t... 38 more\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 37,
+            "name": "user is on the globalTrader webpage",
+            "match": {
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.user_is_on_the_webpage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "user clicks on the women clothing and accessories",
+            "match": {
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.user_clicks_on_the_women_clothing_and_accessories()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "user click on tassel dresses",
+            "match": {
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_tassel_dresses()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "user click on dresses",
+            "match": {
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_dresses()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "user click on buy now button",
+            "match": {
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_buy_now_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "verify sign in message",
+            "match": {
+              "location": "stepdefinitions.GlobalTraderStepDefinitions.verify_sign_in_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test11"
           }
         ]
       }
     ],
-    "name": "US101 The system should allow Agent Seller registration with valid credentials",
+    "name": "US1008_user_should_buy_dresses",
     "description": "",
-    "id": "us101-the-system-should-allow-agent-seller-registration-with-valid-credentials",
+    "id": "us1008-user-should-buy-dresses",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US101_AgentSellerwithValidCredentials.feature",
+    "uri": "file:src/test/resources/features/US108_Women_Accessories_and_Clothing.feature",
     "tags": [
       {
-        "name": "@seller",
+        "name": "@test11",
         "type": "Tag",
         "location": {
           "line": 1,

@@ -1,312 +1,364 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US101_AgentSellerwithValidCredentials.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US108_Women_Accessories_and_Clothing.feature");
 formatter.feature({
-  "name": "US101 The system should allow Agent Seller registration with valid credentials",
+  "name": "US1008_user_should_buy_dresses",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@seller"
+      "name": "@test11"
     }
   ]
 });
-formatter.scenarioOutline({
-  "name": "TC01 The system should allow Agent Seller registration",
+formatter.scenario({
+  "name": "TC01_User_should_have_account",
   "description": "",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "name": "user select to Agent Seller page",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "user enters company name \"\u003ccompanyname\u003e\"",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "user enters company Mobile \"\u003ccompanymobile\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "user enter company address \"\u003ccompanyaddress\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "user enters the fullname \"\u003cfullname\u003e\"",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "user enters the email \"\u003cemail\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "user enter Sub Domain \"\u003csubdomain\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "user enter Mobile Number \"\u003cmobilenumber\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "user select to country",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "user enter to state \"\u003cstate\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "user enter to city \"\u003ccity\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "user enter to postal code \"\u003cpostalcode\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "Select to categories",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "Enter to password \"\u003cpassword\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "Click to Registration Button",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "Verify to registration data",
-  "keyword": "Then "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
+  "keyword": "Scenario",
+  "tags": [
     {
-      "cells": [
-        "companyname",
-        "companymobile",
-        "companyaddress",
-        "fullname",
-        "email",
-        "subdomain",
-        "mobilenumber",
-        "state",
-        "city",
-        "postalcode",
-        "password"
-      ]
-    },
-    {
-      "cells": [
-        "CoTrader",
-        "8571112233",
-        "12 New St.",
-        "John Brown",
-        "abc@gmail.com",
-        "trader",
-        "8571112233",
-        "TX",
-        "Austin",
-        "01213",
-        "123456"
-      ]
+      "name": "@test11"
     }
   ]
 });
-formatter.background({
-  "name": "User is on the Global Trader page",
-  "description": "",
-  "keyword": "Background"
-});
 formatter.step({
-  "name": "user is on the Global Trader page",
+  "name": "user is on the globalTrader webpage",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefinitions.AgentSellerStepDefinition.user_is_on_the_Global_Trader_page()"
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.user_is_on_the_webpage()"
 });
 formatter.result({
-  "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.AgentSellerStepDefinition\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException\r\n\tat utilities.Driver.getDriver(Driver.java:27)\r\n\tat pages.AgentSellerPage.\u003cinit\u003e(AgentSellerPage.java:10)\r\n\tat stepdefinitions.AgentSellerStepDefinition.\u003cinit\u003e(AgentSellerStepDefinition.java:13)\r\n\t... 38 more\r\n",
+  "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.GlobalTraderStepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException\r\n\tat utilities.Driver.getDriver(Driver.java:29)\r\n\tat pages.GlobalTraderPage.\u003cinit\u003e(GlobalTraderPage.java:10)\r\n\tat stepdefinitions.GlobalTraderStepDefinitions.\u003cinit\u003e(GlobalTraderStepDefinitions.java:12)\r\n\t... 38 more\r\n",
   "status": "failed"
 });
 formatter.step({
-  "name": "user is on click Seller Join Now",
+  "name": "user clicks on the women clothing and accessories",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.AgentSellerStepDefinition.user_is_on_click_Seller_Join_Now()"
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.user_clicks_on_the_women_clothing_and_accessories()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user click on tassel dresses",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_tassel_dresses()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user click on dresses",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_dresses()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user click on buy now button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_buy_now_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user enter username",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.user_enter_username()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user enters password",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.user_enters_password()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user click on login button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_login_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "verify the message",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.verify_the_message()"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.scenario({
-  "name": "TC01 The system should allow Agent Seller registration",
+  "name": "TC02_User_should_be_able_to_select_size_and_colour",
   "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
-      "name": "@seller"
+      "name": "@test11"
     }
   ]
 });
 formatter.step({
-  "name": "user select to Agent Seller page",
+  "name": "user is on the globalTrader webpage",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.user_is_on_the_webpage()"
+});
+formatter.result({
+  "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.GlobalTraderStepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException\r\n\tat utilities.Driver.getDriver(Driver.java:29)\r\n\tat pages.GlobalTraderPage.\u003cinit\u003e(GlobalTraderPage.java:10)\r\n\tat stepdefinitions.GlobalTraderStepDefinitions.\u003cinit\u003e(GlobalTraderStepDefinitions.java:12)\r\n\t... 38 more\r\n",
+  "status": "failed"
+});
+formatter.step({
+  "name": "user clicks on the women clothing and accessories",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.user_clicks_on_the_women_clothing_and_accessories()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user click on tassel dresses",
   "keyword": "When "
 });
 formatter.match({
-  "location": "stepdefinitions.AgentSellerStepDefinition.user_select_to_Agent_Seller_page()"
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_tassel_dresses()"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "user enters company name \"CoTrader\"",
+  "name": "user click on dresses",
   "keyword": "When "
 });
 formatter.match({
-  "location": "stepdefinitions.AgentSellerStepDefinition.user_enters_company_name(java.lang.String)"
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_dresses()"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "user enters company Mobile \"8571112233\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.AgentSellerStepDefinition.user_enters_company_Mobile(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user enter company address \"12 New St.\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.AgentSellerStepDefinition.user_enter_company_address(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user enters the fullname \"John Brown\"",
+  "name": "user click on size",
   "keyword": "When "
 });
 formatter.match({
-  "location": "stepdefinitions.AgentSellerStepDefinition.user_enters_the_fullname(java.lang.String)"
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_size()"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "user enters the email \"abc@gmail.com\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.AgentSellerStepDefinition.user_enters_the_email(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user enter Sub Domain \"trader\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.AgentSellerStepDefinition.user_enter_Sub_Domain(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user enter Mobile Number \"8571112233\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.AgentSellerStepDefinition.user_enter_Mobile_Number(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user select to country",
+  "name": "user click on colour",
   "keyword": "When "
 });
 formatter.match({
-  "location": "stepdefinitions.AgentSellerStepDefinition.user_select_to_country()"
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_colour()"
 });
 formatter.result({
   "status": "skipped"
 });
+formatter.scenario({
+  "name": "TC01_User_should_be_able_to_add_to_cart",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@test11"
+    }
+  ]
+});
 formatter.step({
-  "name": "user enter to state \"TX\"",
+  "name": "user is on the globalTrader webpage",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.user_is_on_the_webpage()"
+});
+formatter.result({
+  "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.GlobalTraderStepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException\r\n\tat utilities.Driver.getDriver(Driver.java:29)\r\n\tat pages.GlobalTraderPage.\u003cinit\u003e(GlobalTraderPage.java:10)\r\n\tat stepdefinitions.GlobalTraderStepDefinitions.\u003cinit\u003e(GlobalTraderStepDefinitions.java:12)\r\n\t... 38 more\r\n",
+  "status": "failed"
+});
+formatter.step({
+  "name": "user clicks on the women clothing and accessories",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.AgentSellerStepDefinition.user_enter_to_state(java.lang.String)"
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.user_clicks_on_the_women_clothing_and_accessories()"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "user enter to city \"Austin\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.AgentSellerStepDefinition.user_enter_to_city(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user enter to postal code \"01213\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.AgentSellerStepDefinition.user_enter_to_postal_code(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "Select to categories",
+  "name": "user click on tassel dresses",
   "keyword": "When "
 });
 formatter.match({
-  "location": "stepdefinitions.AgentSellerStepDefinition.select_to_categories()"
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_tassel_dresses()"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "Enter to password \"123456\"",
-  "keyword": "And "
+  "name": "user click on dresses",
+  "keyword": "When "
 });
 formatter.match({
-  "location": "stepdefinitions.AgentSellerStepDefinition.enter_to_password(java.lang.String)"
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_dresses()"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "Click to Registration Button",
-  "keyword": "And "
+  "name": "user click on buy now button",
+  "keyword": "When "
 });
 formatter.match({
-  "location": "stepdefinitions.AgentSellerStepDefinition.click_to_Registration_Button()"
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_buy_now_button()"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "Verify to registration data",
+  "name": "user enter username",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.user_enter_username()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user enters password",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.user_enters_password()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user click on login button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_login_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user click on cart button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_cart_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "verify buy now option",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefinitions.AgentSellerStepDefinition.verify_to_registration_data()"
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.verify_buy_now_option()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "name": "TC01_User_should_not_be_able_to_buy_dresses",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@test11"
+    }
+  ]
+});
+formatter.step({
+  "name": "user is on the globalTrader webpage",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.user_is_on_the_webpage()"
+});
+formatter.result({
+  "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.GlobalTraderStepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\r\n\t... 33 more\r\nCaused by: java.lang.NullPointerException\r\n\tat utilities.Driver.getDriver(Driver.java:29)\r\n\tat pages.GlobalTraderPage.\u003cinit\u003e(GlobalTraderPage.java:10)\r\n\tat stepdefinitions.GlobalTraderStepDefinitions.\u003cinit\u003e(GlobalTraderStepDefinitions.java:12)\r\n\t... 38 more\r\n",
+  "status": "failed"
+});
+formatter.step({
+  "name": "user clicks on the women clothing and accessories",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.user_clicks_on_the_women_clothing_and_accessories()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user click on tassel dresses",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_tassel_dresses()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user click on dresses",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_dresses()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user click on buy now button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.user_click_on_buy_now_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "verify sign in message",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefinitions.GlobalTraderStepDefinitions.verify_sign_in_message()"
 });
 formatter.result({
   "status": "skipped"
