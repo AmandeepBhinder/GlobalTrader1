@@ -6,24 +6,26 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+
 import java.util.concurrent.TimeUnit;
-//WE NEED DRIVER CAUSE WE WANT TO HAVE A SINGLE driver INSTANCE
-//We are making singleton design pattern
+
 public class Driver {
-    private Driver(){
+    private Driver() {
         //we don't create an instance/ object.
     }
+
     //Create static driver instance
     //static because it can be used globally.
     //private is to call this instance only in this class
     private static WebDriver driver;
+
     //create a public static method to instantiate teh driver
-    public static WebDriver getDriver(){
+    public static WebDriver getDriver() {
         //I want to instantiate the driver instance
         //if driver is not pointing anywhere
         //If the driver is already pointing somewhere( being used )
         //We want to have only one driver
-        if(driver==null) {
+        if (driver == null) {
             switch (ConfigReader.getProperty("browser")) {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
@@ -42,11 +44,13 @@ public class Driver {
                     driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
                     break;
             }
+
         }
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         return driver;
     }
+
     public static void closeDriver() {
         //Close driver if it is not null
         //It means driver is pointing chrome(is being used)
@@ -56,4 +60,5 @@ public class Driver {
             driver = null;
         }
     }
-    }
+}
+
